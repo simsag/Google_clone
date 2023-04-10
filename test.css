@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  height: 100vh; /* 높이 */
+  display: flex; /* 화면 레이어 배경 요소 */
+  flex-direction: column; /* column 뒤집기 화면 조정 */
+  align-items: center; /* body 안에 요소 세로 중앙 배치 */
+  /*justify-content: center;*/ /* 가로 중앙 배치 */
+}
+
+header {
+  height: 60px; /* 크기 */
+  width: 100vw; /* 너비 */
+  display: flex;
+  justify-content: space-between; /* 화면 끝 간격 없음 */
+  align-items: center; /* 위에 한번 돌려버렸기 때문에 가로 중앙 배치가 되어버림 */
+  /*position: absolute;*/ /* ? */
+  /*top: 0;*/
+}
+
+.button {
+  background-color: #4683ea;
+  color: aliceblue;
+  border: none;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 9px 23px;
+  margin: 0px 8px;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* 요소들 사이 간격 조정  ex) Google 정보, 스토어*/
+  padding: 0 26px; /* 오른족만 간격 조정 */
+}
+/* 로고 스타일 */
+.logo {
+  display: flex;
+  align-items: center;
+  margin-top: 70px;
+}
+
+/* 검색창 스타일 */
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  width: 638px; /*가로 너비*/
+  height: 46px; /*높이*/
+}
+
+[name="searchInput"] {
+  padding: 0.5rem;
+  align-items: center;
+  border-radius: 1rem;
+  border: 1px solid black;
+  outline: none;
+  width: 20rem;
+}
